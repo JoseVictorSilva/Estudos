@@ -1,36 +1,29 @@
 import pyautogui as p 
 
 voltar = 'fotos/voltar.png'
-barbara = 'fotos/barbaraNome.png'
+jade = 'fotos/nomeJadePicon.png'
 confirm = 'fotos/confirm.png'
+atualizar = 'fotos/atualizar.png'
+count = 0
 def AlteraTela():
     p.keyDown('alt')
     p.press('tab')
     p.keyUp('alt')
 
 def Localiza(nomeFoto):
-    if(p.locateOnScreen(nomeFoto,confidence = 0.8)):
-        return True
-    
-def IdentficaVolta():
-    if(Localiza(voltar)):
-        print('apareceu')
-        return True
-AlteraTela()
+    global count
+    for localiza in p.locateAllOnScreen(nomeFoto):
+        p.click((localiza.width+localiza.left) - localiza.width/2, (localiza.top+localiza.height)-localiza.height/2)
+        if(nomeFoto =='fotos/voltar.png'):
+            count+=1
+            print(count)
 
-p.PAUSE = 0.8
-n = 0
-p.click(100,100)
 while(True):
-    if(Localiza(barbara)):
-        p.click(barbara)
-    if(Localiza(confirm)):
-        p.click(confirm)
-        n+=1
-    if(Localiza('fotos/pular.png')):
-        pular = p.locateCenterOnScreen('fotos/pular.png')
-        p.click(pular[0]+80,pular[1])
+    Localiza(jade)
+    Localiza(confirm)
+    Localiza(voltar)  
+    for att in p.locateAllOnScreen(atualizar):
+        p.click(att.left, att.top-5)
         p.press('F5')
-    if(Localiza(voltar)):
-        p.click(voltar)
+        p.sleep(0.5)
 
