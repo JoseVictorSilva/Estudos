@@ -4,7 +4,7 @@
     {chave:valor for valor in iteravel}
 """
 
-numeros = {'a':1,'b':2,'c':3,'d':4}
+numeros = {'a':(1,2),'b':(2,3),'c':(3,4),'d':(4,5)}
 numeroLista = (1,2,3,4,5) # se tivesse repetissão de chave, iria pular na hora de converter
 quadrado = {chave: valor **2 for chave, valor in numeros.items()}
 print(quadrado)
