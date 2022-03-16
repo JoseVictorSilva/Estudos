@@ -26,4 +26,3 @@ while(True):
         p.click(att.left, att.top-5)
         p.press('F5')
         p.sleep(0.5)
-

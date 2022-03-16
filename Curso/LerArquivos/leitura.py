@@ -15,4 +15,7 @@ arquivo = open('teste.txt')
 print(arquivo)
 print(type(arquivo))
 # Para ler o arquivo
-print(arquivo.read())
+print(arquivo.read()) # Lê todo o conteudo
+
+# O python utiliza um recurso para trabalhar com arquivos chamado cursor. Esse cursor
+# funciona como o cursor de quando escrevemos
