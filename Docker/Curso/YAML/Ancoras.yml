@@ -1,0 +1,15 @@
+# Armazenar dados
+---
+host: jose 
+datacenter: 
+  location: &SP São Paulo
+---
+host: Du 
+datacenter: 
+  location: *SP # O valor será são paulo
+---
+roles: &ghost
+  - webserver
+  - database
+---
+roles: *ghost # O valor sera webserver e database

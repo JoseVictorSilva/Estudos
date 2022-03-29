@@ -1,0 +1,26 @@
+# Tudo abaixo tirando os números, são Strings, que na verdade são valores ESCALARES
+host: "jose" # Não precisa de aspas, \n só funciona em ""
+datacenter: 
+  location: 'São Paulo'
+  router: 42
+  switch: 12
+roles: 
+  - webserver
+  - database
+
+# Valores escalares de multiplas linhas, preserva as linhas
+funcionamento: |
+  segunda - das 8:00 as 17:00
+  terça   - das 9:00 as 18:00
+  quarta  - das 10:00 as 19:00
+  quinta  - das 11:00 as 20:00
+  sexta   - das 12:00 as 21:00
+  sábado  - das 13:00 as 22:00
+  domingo - das 14:00 as 23:00
+comentarios: > # Apresenta tudo na mesma linha por conta do >
+  Temos altos uso de CPU
+  desde 04/10/2020.
+  Estamos investigando
+
+    José Victor
+    email@gmail.com

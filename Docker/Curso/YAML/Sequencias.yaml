@@ -1,0 +1,15 @@
+roles1:
+  - webserver
+  - database
+
+payload1:
+  - bitcoin
+  - ehtereum
+
+payload2:
+  - bitcoin
+  - ehtereum
+
+payload3: [bitcoin, ehtereum]
+
+# Se usar uma sequencia vazia funciona, ele vai instalar o que precisa -> [python, java, c]

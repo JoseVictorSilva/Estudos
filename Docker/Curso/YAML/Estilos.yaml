@@ -1,0 +1,14 @@
+# Estilo em Block
+host1: jose
+datacenter1:
+  location: São Paulo
+  router: 42
+roles1:
+  - web
+  - dns
+
+# Estilo em Fow
+host2: jose
+datacenter2: {location: 
+  São Paulo, router: 42}
+roles2: [ web, dns]

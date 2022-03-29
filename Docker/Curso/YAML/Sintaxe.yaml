@@ -1,0 +1,9 @@
+# 3 Configurações -> host, datacenter, roles
+host: geek
+datacenter: # Usar espaços ao invés de tabs
+  location: São Paulo 
+  router: 42
+roles:
+# Listas
+  - web
+  - dns

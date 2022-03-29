@@ -1,0 +1,22 @@
+---
+host: josé
+datacenter:
+  datacenter: 
+  location: 'São Paulo'
+  router: 42
+  switch: 12
+
+# 3 traços mudam que são dois arquivos/configurações, não precisa colocar o primeiro, e pode adicionar mais
+---
+host: teste
+datacenter: 
+  location: 'Rio'
+  router: 12
+  switch: 1
+
+---
+host: outro
+datacenter: 
+  location: 'São Paulo'
+  router: 15
+  switch: 20

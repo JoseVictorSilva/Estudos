@@ -1,0 +1,14 @@
+%TAG ! tag:host:jose: # A tag informa qual o host de josé, e eu estou marcando que é São Paulo -> Tag: José Host: ? (São Paulo)
+---
+host: jose 
+datacenter: 
+  location: !JOSE São Paulo
+  router: 42
+  switch: 32
+---
+
+host: Anna
+datacenter: 
+  location: São Paulo
+  router: !!str 45 # Indica que é uma string, mas pode indicar outros tipos
+  switch: !!int 32

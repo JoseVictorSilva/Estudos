@@ -1,0 +1,9 @@
+# Mapeamento comum: 
+
+host1: jose
+datacenter1: # 2 mapas
+  location: São Paulo
+  router: 42
+roles1:
+  - web
+  - dns
