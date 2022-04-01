@@ -1,7 +1,7 @@
 DQL: 
     SELECT label FROM table
 DML:
-    INSERT INTO table (column) VALUES ('value')
+    INSERT INTO table SET (column) VALUES ('value')
     UPDATE table SET column = 'value' WHERE key = (values)
     DELETE FROM table WHERE key = (values)
 DDL:

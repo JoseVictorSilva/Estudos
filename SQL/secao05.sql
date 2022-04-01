@@ -1,0 +1,3 @@
+CREATE DATABASE secao05;
+USE secao05
+
