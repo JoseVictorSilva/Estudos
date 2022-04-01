@@ -1,0 +1,51 @@
+DQL: 
+    SELECT label FROM table
+DML:
+    INSERT INTO table (column) VALUES ('value')
+    UPDATE table SET column = 'value' WHERE key = (values)
+    DELETE FROM table WHERE key = (values)
+DDL:
+    CREATE DATABASE database
+    CREATE TABLE table (primary_key INT PRIMARY KEY, second_value VARCHAR(50))
+    ALTER TABLE table ADD columns DECIMAL(8,2)
+    DROP TABLE table
+DCL:
+    GRANT SELECT ON table TO user -> Give Permission
+    REVOKE SELECT ON table TO user -> Revoke Permission
+DTL:
+    BEGIN TRANSACTION;-> (START TRANSACTION) 
+        insert into table values ('value')
+        insert into table values ('value')
+    COMMIT -> End's transaction
+    ROLLBACK -> Undo
+
+===========================| A:B |===========================
+LEFT JOIN:
+    All in A but only in those that have in common with B
+    WHERE B.Key IS NULL -> All in A but only in those not have in common with B
+RIGHT JOIN:
+    All in B but only in those that have in common with A
+    WHERE A.Key IS NULL -> All in B but only in those not have in common with A
+INNER JOIN:
+    Just what they have in common
+FULL OUTER JOIN:
+    ALL
+    WHERE A.Key IS NULL OR B.Key IS NULL -> Just what they don't have in common
+
+MAX/MIN/HAVING:
+    SELECT MAX(column) FROM table 
+    SELECT MIN(column) FROM table 
+    SELECT MAX(column) FROM table GROUP BY column HAVING MAX(column) > n 
+    SELECT MAX(column) FROM table GROUP BY column HAVING MIN(column) < n 
+    SUM() -> well...
+    AVG() -> Average
+    ROUND() -> well2
+
+GROUP BY/ ORDER BY
+    SELECT columns from table GROUP BY columns -> group by common
+    SELECT columns from table ORDER BY columns -> sort
+
+USER 
+    CREATE USER '****'@'localhost' IDENTIFIED BY '****';
+    GRANT ALL PRIVILEGES ON *.* TO '****'@'localhost' WITH GRANT OPTION;
+    FLUSH PRIVILEGES;
