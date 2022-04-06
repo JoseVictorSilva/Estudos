@@ -1,0 +1,11 @@
+> mongo -> conecta
+> show dbs -> mostra os bancos
+> use nome -> cria um banco com o nome
+> show collections -> coleções do banco
+> db.pessoas.find() -> mostre todos os doc do db 'pessoas'
+> db.pessoas.find().pretty() -> mesma coisa do anterior só que organizado
+> db.pessoas.find({"nome": "José"}).pretty() -> autoexplicativo
+> db.tipos_produtos.insert({"descricao":"computador"}) -> insere o valor descricao em tipos_produtos
+> db.createCollection("acessos") -> cria uma coleção vazia
+
+

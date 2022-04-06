@@ -1,0 +1,14 @@
+CREATE TABLE tipos_produtos(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    descricao TEXT NOT NULL
+);
+
+CREATE TABLE produtos(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    descricao TEXT NOT NULL,
+    preco REAL NOT NULL,
+    id_tipo_produto INTEGER REFERENCES tipos_produtos(id) NOT NULL,
+    validade TEXT NOT NULL
+);
+
+INSERT INTO produtos (descricao,preco,id_tipo_produto,validade) VALUES ('abc',1200.00,1,2022-06-09)
