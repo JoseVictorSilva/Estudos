@@ -9,3 +9,17 @@
 > db.createCollection("acessos") -> cria uma coleção vazia
 
 
+- O update irá substituir o documento original pelo nome especificado no segundo parametro
+
+Greater Than -> gt
+Greater Than or Equal -> gte
+
+Para importar algo no mongo:
+
+    1- Abra o terminal no mesmo diretório que está o arquivo com os dados
+    2- Execute o comando: 
+        mongoimport -d meubanco -c inscricoes --jsonArray < inscricoes.json 
+        
+    Onde 'meubanco' é o nome do banco de dados, 'inscricoes' é o nome da coleção
+    na qual queremos importar os dados e por último 'inscricoes.json' é o arquivo
+    contendo os dados.
