@@ -1,4 +1,3 @@
-import jsonpickle
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from yellowbrick.classifier import ConfusionMatrix
