@@ -1,7 +1,7 @@
 import cv2
 
 rastreador = cv2.TrackerCSRT_create()
-video = cv2.VideoCapture('Arquivos/Teste.mp4')
+video = cv2.VideoCapture('Arquivos/rua.mp4')
 ok, frame = video.read()
 
 bbox = cv2.selectROI(frame)

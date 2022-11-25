@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-base_casas = pd.read_csv('../ArquivosBase/house_prices.csv')
+base_casas = pd.read_csv('ArquivosBase/house_prices.csv')
 
 X_casas = base_casas.iloc[:,5:6].values
 print(f'X: {X_casas}')

@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import  mean_absolute_error, mean_squared_error
 
-base_casas = pd.read_csv('../ArquivosBase/house_prices.csv')
+base_casas = pd.read_csv('ArquivosBase/house_prices.csv')
 
 X_casas = base_casas.iloc[:,3:19].values
 print(f'X: {X_casas}')
@@ -38,7 +38,7 @@ print(f'Teste X: {X_casas_teste.shape}')
 print(f'Teste Y: {y_casas_teste.shape}')
 print(f'Previsão: {previsao.shape}\n')
 
-#grafico1 = px.scatter(x = X_casas_teste, y = y_casas_teste.ravel())
+grafico1 = px.scatter(x = X_casas_teste, y = y_casas_teste.ravel())
 grafico2 = px.scatter(x = y_casas_teste, y=previsao)
 grafico2.data[0].line.color = 'red'
 grafico3 = go.Figure(data=  grafico2.data)
