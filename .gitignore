@@ -10503,4 +10503,10 @@ Pytorch/RedesConvolucionais/dataset/training_set/gato/cat.996.jpg
 Pytorch/RedesConvolucionais/dataset/training_set/gato/cat.997.jpg
 Pytorch/RedesConvolucionais/dataset/training_set/gato/cat.998.jpg
 Pytorch/RedesConvolucionais/dataset/training_set/gato/cat.999.jpg
+Pytorch/GAN/MNIST/*
+Pytorch/GAN/cifar-10-batches-py/*
+Pytorch/GAN/cifar-10-python.tar.gz
 .gitignore
+Aulas/image.jpg
+Aulas/testes.py
+LINKS.mkd
