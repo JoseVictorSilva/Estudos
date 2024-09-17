@@ -1,4 +1,4 @@
-Django==2.2.17
+Django==3.2.25
 django-adminlte2==0.4.1
 django-stdimage==5.0.1
 Pillow==9.0.1
